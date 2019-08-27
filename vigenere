@@ -60,7 +60,10 @@ int main(int argc, string argv[])
                 //convert lower case letters
                 printf("%c", ((((c - 97) + key) % 26) + 97));
             }
+            else if (' ' == c)
+                {printf(" ");
 
+                }
             else
             {
                 //print all other chars
@@ -93,5 +96,7 @@ int shift(char c)
     }
     return c;
 }
+
+
 
 
